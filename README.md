@@ -3,6 +3,7 @@
 > React router 4 wrapper for big projects
 
 [![NPM](https://img.shields.io/npm/v/enterprise-react-router.svg)](https://www.npmjs.com/package/enterprise-react-router) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![CircleCI](https://circleci.com/gh/IsTheJack/enterprise-react-router/tree/master.svg?style=svg)](https://circleci.com/gh/IsTheJack/enterprise-react-router/tree/master)
 
 ## Install
 
