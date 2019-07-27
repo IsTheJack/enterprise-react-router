@@ -43,22 +43,22 @@ jobs:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
       - run:
-          name: Publish package
-          command: npm publish
+          name: Semantic Release
+          command: npx semantic-release
 
 workflows:
   version: 2
   test-deploy:
     jobs:
-      - test:
-          filters:
-            tags:
-              only: /^v.*/
+      - test
+          # filters:
+          #   tags:
+          #     only: /^v.*/
       - deploy:
           requires:
             - test
           filters:
-            tags:
-              only: /^v.*/
+          #   tags:
+          #     only: /^v.*/
             branches:
-              ignore: /.*/
+              only: master
